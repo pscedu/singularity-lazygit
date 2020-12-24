@@ -1,5 +1,7 @@
 # lazygit
 
+![Screenshot](./images/screenshot.png)
+
 ## Building the image using the recipe
 
 ### To build the image locally
