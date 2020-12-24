@@ -1,0 +1,18 @@
+Bootstrap: docker
+From: alpine:edge
+
+%labels
+    AUTHOR icaoberg
+    MAINTAINER icaoberg@psc.edu
+    WEBSITE http://www.andrew.cmu.edu/~icaoberg
+
+%post
+    apk update
+    apk add lazygit git
+
+####################################################################################
+%apphelp lazygit
+    lazygit --help
+
+%apprun lazygit
+    lazygit "$@"
