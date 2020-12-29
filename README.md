@@ -1,7 +1,5 @@
 # lazygit
 
-![Screenshot](./images/screenshot.png)
-
 ## Building the image using the recipe
 
 ### To build the image locally
@@ -10,6 +8,14 @@ Run the script `build.sh` to build image locally.
 ```
 bash ./build.sh
 ```
+
+## Example
+```
+singularity exec singularity-lazygit-0.22.9.sif lazygit
+```
+
+![Screenshot](/images/screenshot.png)
+
 ---
 [![PSC](http://www.andrew.cmu.edu/user/icaoberg/images/logos/psc.png)](http://www.psc.edu)
 
