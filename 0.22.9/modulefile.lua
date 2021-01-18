@@ -8,6 +8,8 @@
 whatis("Name: lazygit")
 whatis("Version: 0.22.9")
 whatis("Category: Other")
+whatis("URL: https://www.psc.edu/resources/software")
+whatis("Description: A simple terminal UI for git commands, written in Go with the gocui library.")
 
 help([[
 lazygit 0.22.9
