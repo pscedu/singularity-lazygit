@@ -14,6 +14,16 @@ whatis("Description: A simple terminal UI for git commands, written in Go with t
 help([[
 lazygit 0.24.2
 --------------
+A simple terminal UI for git commands, written in Go with the gocui library.
+
+To load the module type
+
+> module load lazygit/0.24.2
+
+To unload the module type
+
+> module unload lazygit/0.24.2
+
 Tools included in this module are
 
 * lazygit
