@@ -4,6 +4,8 @@
 -- "URL: https://www.psc.edu/resources/software"
 -- "Category: Other"
 -- "Description: A simple terminal UI for git commands, written in Go with the gocui library."
+-- "Keywords: singularity utilities"
+
 
 whatis("Name: lazygit")
 whatis("Version: 0.24.2")
