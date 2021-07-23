@@ -7,7 +7,7 @@
 # singularity-lazygit
 ![Screenshot](/images/screenshot.png)
 
-Singularity recipe for [lazygit](https://dev.yorhel.nl/lazygit).
+Singularity recipe for [lazygit](https://github.com/jesseduffield/lazygit).
 
 ## Installing the container on Bridges 2
 Copy the
