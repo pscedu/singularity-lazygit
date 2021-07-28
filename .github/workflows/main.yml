@@ -23,14 +23,16 @@ jobs:
            if [ $DIRECTORY != 'images' ]; then
              cd $DIRECTORY
 
-             echo "Building container"
-             bash ./build.sh
+             if [ ! -f .ignore ]; then
+               echo "Building container"
+               bash ./build.sh
 
-             if [ -f ./test.sh ]; then
-              echo "Running tests"
-              bash ./test.sh
-             else
-              echo "Test file not found. Skipping tests."
+               if [ -f ./test.sh ]; then
+                echo "Running tests"
+                bash ./test.sh
+               else
+                echo "Test file not found. Skipping tests."
+               fi
              fi
              cd ..
            fi
