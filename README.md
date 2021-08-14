@@ -1,4 +1,5 @@
 ![Status](https://github.com/pscedu/singularity-lazygit/actions/workflows/main.yml/badge.svg)
+![Status](https://github.com/pscedu/singularity-lazygit/actions/workflows/pretty.yml/badge.svg)
 ![Issue](https://img.shields.io/github/issues/pscedu/singularity-lazygit)
 ![forks](https://img.shields.io/github/forks/pscedu/singularity-lazygit)
 ![Stars](https://img.shields.io/github/stars/pscedu/singularity-lazygit)
