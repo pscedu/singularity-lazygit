@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION=0.28.2
+VERSION=0.24.2
 PACKAGE=lazygit
 TOOL=lazygit
 DIRECTORY=$(dirname $0)

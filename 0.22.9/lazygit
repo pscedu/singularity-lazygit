@@ -16,4 +16,3 @@ do
 done
 
 singularity exec $OPTIONS $DIRECTORY/singularity-$PACKAGE-$VERSION.sif $TOOL "$@"
-
