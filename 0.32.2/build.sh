@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright © 2021 Pittsburgh Supercomputing Center.
+# Copyright © 2022 Pittsburgh Supercomputing Center.
 # All Rights Reserved.
 
 IMAGE=singularity-lazygit-0.32.2.sif
