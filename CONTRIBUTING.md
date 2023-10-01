@@ -1,59 +1,75 @@
-# Contributing to this repository 
-If you are a [PSC](https://www.psc.edu/staff-directory/) staff or intern, when contributing to this repository, please first request permission for changes you wish to make via issue, email, milestone, Slack or any other method you see fit.
+# Contribution Guidelines
 
-If you are a collaborator or a community member, when contributing to this repository, please fork this repository and create a [pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) when appropiate. 
+## Introduction
+Thank you for considering contributing to this repository. Your contributions are essential to our project's growth and success. To maintain a professional and collaborative environment, we have established these guidelines to streamline the contribution process.
 
-# CheckList 
-Please make sure the listed files are listed within the repository and update them as needed
+### For PSC Staff and Interns
+If you are a [PSC](https://www.psc.edu/staff-directory/) staff member or intern, please initiate contributions by requesting permission for your proposed changes through any suitable method such as creating an issue, sending an email, discussing it in a milestone, or using Slack.
+
+### For Collaborators and Community Members
+If you are a collaborator or part of our community, please follow these steps to contribute:
+
+1. Fork this repository.
+2. Create a [pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) when it is appropriate.
+
+## Contribution Checklist
+Before making your contribution, ensure that the following files are present in the repository and update them as needed:
 
 1. `README.md`
 2. `LICENSE`
-3. Github Action folder `.github`
+3. `.github` folder for GitHub Actions
 
-For each version, you will create a separate folder. For each version, create or update
+For each version, create a separate folder and within it, create or update the following:
 
-1. `Singularity` definition file, one per version
-2. Build scripts `build.sh` and `rbuild.sh`, one pair per version
-3. LMOD `modulefile.lua` file, one file per version
-4. Test script `test.sh`, one file per version
+1. `Singularity` definition file (one per version)
+2. Build scripts: `build.sh` and `rbuild.sh` (one pair per version)
+3. LMOD `modulefile.lua` file (one file per version)
+4. Test script: `test.sh` (one file per version)
 
-# Ready to make changes? Open your own branch 
-Use a branch to isolate development work without affecting other branches in the repository. Each repository has one default branch, and can have multiple other branches. You can merge a branch into another branch using a pull request.
-To learn how to create a branch click [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches ).
+## Creating Your Development Branch
+To isolate your development work and prevent interference with other branches in the repository, create a new branch. Each repository has a default branch, and you can have multiple other branches. To learn how to create a branch, refer to [GitHub's documentation](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches).
 
-# Use a Consistent Coding Style 
-For this project we will follow the [Google Style Guides](https://google.github.io/styleguide/) for Shell and Python (and others if necessary).
+## Coding Style
+We adhere to the [Google Style Guides](https://google.github.io/styleguide/) for Shell and Python (and other languages as needed). Please follow these guidelines, including:
 
-2 spaces for indentation rather than tabs
-You can try running npm run lint for style unification
+- Use 2 spaces for indentation instead of tabs.
+- Run `npm run lint` to ensure style consistency.
 
+## Reporting Bugs
+We utilize GitHub issues to track and manage public bugs. If you encounter a bug, report it by opening a new issue. For detailed instructions, please visit [GitHub's guide on creating issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-issues/creating-an-issue).
 
-# Report bugs using Github's issues
-We use GitHub issues to track public bugs. Report a bug by opening a new issue. 
-For instruction please visit https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-issues/creating-an-issue
+## Pull Request Process
+Follow these steps when creating a pull request:
 
-# Pull request process 
+1. Ensure you have a Git application and a text editor installed on your device.
+2. Verify that you have the appropriate access to the repository.
+3. Update the `README.md` using a text editor with details of the changes made, including new environment variables, exposed ports, file locations, and container parameters.
+4. Increment version numbers in example files and the `README.md` to reflect the changes in your Pull Request.
+5. Commit changes to the main branch after fetching and pushing to the origin through Git. Refresh the repository on the GitHub webpage.
+6. Merge the Pull Request once it receives approval from two other developers. If you lack permissions, request the second reviewer to merge on your behalf.
 
+## Windows Considerations
+If you are developing on Windows, keep the following points in mind:
 
-1. Ensure any install Git application and a text editor on your computing device. 
-2. Have the right access to the desired repository.
+1. Regular Expressions: Use `\r?\n` instead of `\n` for line endings to support both Windows and Unix-based systems.
+2. Paths: Windows uses `\` as the path separator. Consider using `path.posix` or the slash module for forward slashes when needed.
+3. Bash: Not all Windows terminals fully support Bash, so consider writing scripts in JavaScript instead.
 
-3. Update the README.md using the text editor with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
+## Additional Rules
+In addition to the above guidelines, please adhere to the following rules:
 
-4. Increase the version numbers in any examples files and the README.md to the new version that this Pull Request would represent.
+1. **Code Quality:** Ensure that your code is of high quality, well-documented, and follows best practices in software development.
 
-5. Commit changes to main after you fetch origin then push origin through Git. Refresh the repository on Github webpage. 
+2. **Testing:** Thoroughly test your changes to ensure they do not introduce new issues or regressions.
 
-6. You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.
+3. **Respect Others:** Be respectful and professional in all communications and interactions within the community.
 
-# Windows
-his site can be developed on Windows, however a few potential gotchas need to be kept in mind:
+4. **License Compliance:** Ensure that your contributions comply with the project's licensing terms.
 
-1. Regular Expressions: Windows uses \r\n for line endings, while Unix based systems use \n. Therefore when working on Regular Expressions, use \r?\n instead of \n in order to support both environments. The Node.js os.EOL property can be used to get an OS-specific end-of-line marker.
-2. Paths: Windows systems use \ for the path separator, which would be returned by path.join and others. You could use path.posix, path.posix.join etc and the slash module, if you need forward slashes - like for constructing URLs - or ensure your code works with either.
-3. Bash: Not every Windows developer has a terminal that fully supports Bash, so it's generally preferred to write scripts in JavaScript instead of Bash.
+## Support
+For support requests, please email us at `help@psc.edu`.
 
-# Support
-Please email help@psc.edu for support requests.
+---
+Copyright © 2020-2023 Pittsburgh Supercomputing Center. All Rights Reserved.
 
-[![Logo](https://developer.nvidia.com/sites/default/files/logos/psc_logo.png)](https://github.com/orgs/pscedu)
+The [Biomedical Applications Group](https://www.psc.edu/biomedical-applications/) at the [Pittsburgh Supercomputing Center](http://www.psc.edu) in the [Mellon College of Science](https://www.cmu.edu/mcs/) at [Carnegie Mellon University](http://www.cmu.edu).
