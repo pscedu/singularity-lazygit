@@ -16,9 +16,9 @@ Copy the
 * `SIF` file
 * and the `lazygit` script
 
-to `/opt/packages/lazygit/0.24.2`.
+to `/opt/packages/lazygit/0.53.0`.
 
-Copy the file `modulefile.lua` to `/opt/modulefiles/lazygit` as `0.24.2.lua`.
+Copy the file `modulefile.lua` to `/opt/modulefiles/lazygit` as `0.53.0.lua`.
 
 ## Building the image using the recipe
 ### To build the image locally
@@ -43,7 +43,7 @@ bash ./test.sh
 ```
 
 ---
-Copyright © 2020-2021 Pittsburgh Supercomputing Center. All Rights Reserved.
+Copyright © 2020-2025 Pittsburgh Supercomputing Center. All Rights Reserved.
 
 The [Biomedical Applications Group](https://www.psc.edu/biomedical-applications/) at the [Pittsburgh Supercomputing
 Center](http://www.psc.edu) in the [Mellon College of Science](https://www.cmu.edu/mcs/) at [Carnegie Mellon University](http://www.cmu.edu).
